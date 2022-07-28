@@ -1,0 +1,66 @@
+@import '../../../assets/styles/variables.less';
+
+.cart-header {
+    padding: 0;
+    width: 100%;
+    text-align: end;
+
+    >h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+}
+
+.cart-item {
+    width: 100%;
+    background-color: #2D333D;
+    border-bottom: 1px solid @secondary-dark-border;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    cursor: context-menu;
+
+    &:hover {
+        background-color: lighten(#2D333D, 10%);
+    }
+}
+
+.cart-item-name {
+    width: 50%;
+    text-align: start;
+    padding-left: 0.2rem;
+}
+
+.cart-item-price {
+    width: 50%;
+    text-align: end;
+    padding-right: 0.2rem;
+}
+
+.cart-checkout {
+    margin-top: 0.5rem;
+}
+
+.cart-checkout-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+.MuiPaper-root {
+    padding: 0 0.2rem 0 0.2rem;
+    width: 15rem !important;
+    background-color: @secondary-dark  !important;
+    color: @main-color  !important;
+    border: 1px solid @secondary-dark-border;
+}
+
+.MuiMenu-list {
+    width: 100% !important;
+}
+
+.MuiSvgIcon-fontSizeSmall {
+    cursor: help;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,1 @@
+Cosmos intergalatic travel agency e-commerce application created in React.Js for Wavemyth technical interview.

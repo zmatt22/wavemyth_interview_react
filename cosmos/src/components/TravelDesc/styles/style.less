@@ -1,0 +1,63 @@
+@import '../../../assets/styles/variables.less';
+
+.travel-desc-container {
+    width: @content-width;
+    margin: 3rem auto 1rem auto;
+    #travel-desc {
+        padding-right: 6px;
+        @media( max-width: @breakpoint-sm) {
+            height: 32rem;
+            overflow-y: auto;
+        }
+    }
+    >div {
+        width: 68%;
+        font-size: 15px;
+        @media(max-width: @breakpoint-md) {
+            width: 100%;
+        }
+        >h2,
+        p {
+            text-align: start;
+        }
+
+        >h2 {
+            border-bottom: 1px solid #3A424E;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+
+        }
+
+        >p {
+            text-align: start;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+/* SCROLLBAR */
+
+#travel-desc::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #272B35;
+}
+
+#travel-desc::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #272B35;
+}
+
+#travel-desc::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: @main-color;
+}
+
+/* SCROLLBAR END */

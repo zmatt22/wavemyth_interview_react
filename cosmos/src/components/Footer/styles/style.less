@@ -1,0 +1,33 @@
+@import '../../../assets/styles/variables.less';
+
+.footer {
+    width: 100%;
+    text-align: start;
+    padding: 2rem 0 3.5rem 0;
+    background-color: @main-dark;
+    font-weight: @text-light;
+    font-size: 0.75rem;
+    @media( max-width: @breakpoint-sm) {
+        padding-bottom: 2rem;
+    }
+    >div {
+        width: 75%;
+        @media( max-width: @breakpoint-sm) {
+            width: 100%;
+        }
+        margin: 0 auto;
+        >div {
+            width: @content-width;
+            margin: 0 auto;
+            
+            p {
+                width: 30%;
+                margin-block: 0;
+                
+                @media( max-width: @breakpoint-sm) {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

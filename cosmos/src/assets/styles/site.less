@@ -1,0 +1,50 @@
+@import './variables.less';
+
+body {
+    background: @main-background center center;
+    font-family: @main-font;
+    font-size: 16px;
+    color: @main-color;
+}
+
+.App {
+    background: @main-background center center;
+    text-align: center;
+}
+
+strong {
+    font-weight: @text-bold;
+}
+
+.primary-btn {
+    background-color: #46C351;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid @secondary-dark;
+    padding: 0.2rem 0.8rem;
+    outline: 0;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#46C351, 10%);
+    }
+}
+
+/*--- HOME PAGE ---*/
+
+.home-container {
+    width: 75%;
+    margin: 0 auto;
+    @media( max-width: @breakpoint-sm) {
+        width: 100%;
+    }
+}
+
+
+.checkout-btn-container {
+    width: @content-width;
+    margin: 2rem auto 4rem auto;
+    text-align: start;
+}
+
+/*--- HOME PAGE END ---*/

@@ -1,0 +1,145 @@
+@import '../../../assets/styles/variables.less';
+
+.carousel-container {
+    margin: 3rem auto;
+}
+
+.slick-slide>div {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-top: 50px;
+    margin: auto;
+    padding: 0px;
+    
+}
+
+.carousel-arrow-container {
+    position: absolute;
+    background-color: @secondary-dark;
+    border: 1px solid #181D26;
+    border-radius: 15%;
+    width: 3.3rem;
+    height: 3.2rem;
+    text-align: center;
+    top: 40%;
+    cursor: pointer;
+    
+    @media( max-width: @breakpoint-sm) {
+        width: 2.3rem;
+        height: 2.2rem;
+       
+    }
+
+    &:hover {
+        background-color: lighten(@secondary-dark, 10);
+    }
+}
+
+.MuiSvgIcon-fontSizeLarge {
+    font-size: 3.2rem !important;
+    @media( max-width: @breakpoint-sm) {
+        font-size: 2rem !important;
+       
+    }
+}
+
+.carousel-arrow-prev {
+    left:8%;
+    z-index: 25;
+    
+    @media( max-width: @breakpoint-sm) {
+        left: 5%;   
+    }
+}
+
+.carousel-arrow-next {
+    right: 8%;
+    @media( max-width: @breakpoint-sm) {
+        right: 5%;
+    }
+}
+
+.carousel-item-container {
+    width: @content-width;
+    display: flex;
+ 
+    @media (max-width: @breakpoint-lg) {
+        flex-wrap: wrap;
+    }
+
+    img {
+        border-radius: 2% 0 0 2%;
+        @media (max-width: @breakpoint-md) {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.carousel-item-img-container {
+    position: relative;
+}
+
+.carousel-item-img-desc {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    label {
+        padding: 0;
+        margin: 0;
+        line-height: 1.1rem;
+    }
+}
+
+.carousel-item-desc {
+    padding-right: 3.8rem;
+
+}
+
+.carousel-item-desc-container {
+    background-color: #2D333D;
+    border: 1px solid @secondary-dark-border;
+    text-align: start;
+    padding: 0 1rem;
+    padding-top: 1rem;
+    border-radius: 0 2% 2% 0;
+    line-height: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .primary-btn {
+        line-height: normal;
+        padding: 6px 12.8px ;
+    }
+
+}
+
+.carousel-item-purch-container {
+    background-color: @secondary-dark;
+    border: 1px solid @secondary-dark-border;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.7rem;
+    margin: 1rem 0;
+
+
+}
+
+.price-label {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: @text-bold;
+}
+
+.ticket-desc {
+    font-size: 0.8rem;
+}

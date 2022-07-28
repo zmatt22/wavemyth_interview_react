@@ -1,0 +1,53 @@
+.cart-header {
+  padding: 0;
+  width: 100%;
+  text-align: end;
+}
+.cart-header > h2 {
+  padding: 0;
+  margin: 0;
+}
+.cart-item {
+  width: 100%;
+  background-color: #2D333D;
+  border-bottom: 1px solid #181D26;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
+  cursor: context-menu;
+}
+.cart-item:hover {
+  background-color: #434c5a;
+}
+.cart-item-name {
+  width: 50%;
+  text-align: start;
+  padding-left: 0.2rem;
+}
+.cart-item-price {
+  width: 50%;
+  text-align: end;
+  padding-right: 0.2rem;
+}
+.cart-checkout {
+  margin-top: 0.5rem;
+}
+.cart-checkout-btn {
+  display: block;
+  margin: 0 auto;
+}
+.MuiPaper-root {
+  padding: 0 0.2rem 0 0.2rem;
+  width: 15rem !important;
+  background-color: #272B35 !important;
+  color: #A9B5CC !important;
+  border: 1px solid #181D26;
+}
+.MuiMenu-list {
+  width: 100% !important;
+}
+.MuiSvgIcon-fontSizeSmall {
+  cursor: help;
+  font-size: 0.8rem !important;
+  margin-bottom: 0.5rem;
+}
